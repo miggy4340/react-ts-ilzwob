@@ -1,0 +1,55 @@
+{
+  "type": "object",
+  "properties": {
+    "car": {
+      "type": "object",
+      "properties": {
+        "brand": {
+          "type": "string"
+        },
+        "created": {
+          "type": "string"
+        },
+        "created_by": {
+          "type": "string"
+        },
+        "damper": {
+          "type": "string"
+        },
+        "licensenumber": {
+          "type": "string"
+        },
+        "model": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "productionyear": {
+          "type": "string"
+        },
+        "stage": {
+          "type": "string"
+        },
+        "weight": {
+          "type": "object",
+          "properties": {
+            "unit": {
+              "type": "string"
+            },
+            "value": {
+              "type": "integer"
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "created",
+    "created_by",
+    "name"
+  ],
+  "title": "Entity",
+  "description": "an entity"
+}
